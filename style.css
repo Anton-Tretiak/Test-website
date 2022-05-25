@@ -38,7 +38,8 @@ section.first_section {
 .first_section_a{
     font-family: Helvetica, serif;
     font-size: 3vh;
-    padding: 6vh;
     background-color: rgb(214, 95, 95);
     color: white;
+    padding: 6vh;
+    border-radius: 1vw;
 }
