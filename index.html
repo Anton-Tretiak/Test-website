@@ -14,7 +14,7 @@
 <body>
         <header>
             <div class="header_photo">
-                <img src="img/face.jpg" alt="My_Photo">
+                <img src="img/main-photo.jpg" alt="My_Photo">
             </div>
             <div class="header_myname">
                 <div></div>
@@ -69,20 +69,18 @@
                 <h2>Code Example</h2>
                 <div class="code_example_wrapper">
                     <pre><code>
-                        var searchInsert = function(nums, target) {
-    
-                            if (nums.includes(target)) {
-                                return nums.indexOf(target);
-                            }
-                            else {
-                                nums.push(target); 
-                                nums.sort(function (a,b) {
-                                    return a - b;                               
-                                })
-                                return nums.indexOf(target); 
-                            }
-                                
-                        };
+var searchInsert = function(nums, target) {
+    if (nums.includes(target)) {
+        return nums.indexOf(target);
+    }
+    else {
+        nums.push(target); 
+        nums.sort(function (a,b) {
+            return a - b;                               
+        })
+    return nums.indexOf(target); 
+    }                               
+};
                     </code></pre>
                 </div>
             </div>
@@ -107,7 +105,7 @@
                 <h2>Languages</h2>
                 <div class="education_wrapper">
                     <ul>
-                        <li>Engilsh B2 <i>(Upper-Intermediate)</i><br>Excellent knowledge of the language, the ability to communicate clearly, I perceive<br> information in any form.</li>
+                        <li>Engilsh B2 <i>(Upper-Intermediate)</i><br>Excellent knowledge of the language, easy to speak and take in information</li>
                         <li>Ukrainian <i>(Native)</i></li>
                         <li>Russian <i>(Native)</i></li>
                     </ul>
