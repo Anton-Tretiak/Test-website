@@ -1,9 +1,9 @@
-@font-face {
+/* @font-face {
     font-family: "PoppinsLig"; 
     src: url('fonts/Poppins-Light.ttf') format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
-}
+} */
 html {
     overflow-x: hidden;
 }
@@ -37,7 +37,7 @@ header {
     height: 100vh;
     background-color: rgb(51, 52, 52);
     color: rgb(164, 165, 166);
-    font-family: PoppinsLig, sans-serif;
+    font-family: Poppins, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -85,7 +85,7 @@ header {
 main{
     width: 100%;
     color: rgb(164, 165, 166);
-    font-family: PoppinsLig;
+    font-family: Poppins;
 }
 .about_me {
     width: 100%;
