@@ -8,18 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
         <header>
-
             <div class="header_photo">
-                <img src="img/face.jpg" alt="Me">
+                <img src="img/face.jpg" alt="My_Photo">
             </div>
             <div class="header_myname">
                 <div></div>
                 <div class="header_myname_h1h2">
                     <h1 class="name_surname"><span>Anton</span> Tretiak</h1>
-                    <h3 class="header_specialization">Trainee Front-end web developer</h3>
-                    <h3 class="city">Kyiv, Ukraine</h3>
+                    <h2 class="header_specialization">Trainee Front-end web developer</h2>
+                    <h2 class="city">Kyiv, Ukraine</h2>
                 </div>
                 <nav>
                     <ul>
@@ -38,8 +36,80 @@
                     </ul>
                 </nav>
             </div>
-
         </header>
-    </div>
+
+        <main>
+
+            <div class="about_me">
+                <h2>About me</h2>
+                <p>Nowadays I'm learning web development particularly with a focus on JavaScript. I have development experience in the past but now i've decided back to programming and web dev. I have developed responsive websites in the past for fun and solved various problems in python I am sure that I will be able to master this profession, as I have such important qualities as: technical mindset, incredible determination, excellent perseverance, craving for new knowledge and self-development. Now I'm studying for two months and a feel that i have really good potential, so I decided to enroll the course from The Rolling Scopes School to speed up my learning.</p>
+            </div>
+            <div class="skills">
+                <h2>My Skills</h2>
+                <div class="skills_wrapper">
+                        <ul>
+                        <li><b>HTML</b></li>
+                        <li><b>CSS</b></li>
+                        <li><b>JavaScript</b></li>
+                        <li><b>C Language</b></li>
+                    </ul>
+                    <ul>
+                        <li><b>Python</b></li>
+                        <li><b>Git</b></li>
+                        <li><b>VSCode</b></li>
+                        <li><b>Adobe Photoshop</b></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="code_example">
+                <h2>Code Example</h2>
+                <div class="code_example_wrapper">
+                    <pre><code>
+                        var searchInsert = function(nums, target) {
+    
+                            if (nums.includes(target)) {
+                                return nums.indexOf(target);
+                            }
+                            else {
+                                nums.push(target); 
+                                nums.sort(function (a,b) {
+                                    return a - b;                               
+                                })
+                                return nums.indexOf(target); 
+                            }
+                                
+                        };
+                    </code></pre>
+                </div>
+            </div>
+            <div class="education">
+                <h2>Education</h2>
+                <div class="education_wrapper">  
+                    <ul>
+                        <li><b>Lyceum of information technologies</b><i>(2015 - 2020)</i></li>
+                        <li><b>National Aviation University:</b> <i>The Faculty of Computer Engineering (2020-nowadays)</i></li>
+                        <li><b>Courses:</b>
+                            <ul>
+                                <li>FreeCodeCamp HTML & CSS course</li>
+                                <li>HTML Academy free course</li>
+                                <li>CS50 lectures</li>
+                                <li>The Rolling Scopes School <i>(in progress)</i></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="languages">
+                <h2>Languages</h2>
+                <div class="education_wrapper">
+                    <ul>
+                        <li>Engilsh B2 <i>(Upper-Intermediate)</i><br>Excellent knowledge of the language, the ability to communicate clearly, I perceive<br> information in any form.</li>
+                        <li>Ukrainian <i>(Native)</i></li>
+                        <li>Russian <i>(Native)</i></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
 </body>
 </html>

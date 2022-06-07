@@ -1,18 +1,18 @@
 @font-face {
     font-family: "PoppinsLig"; 
-    src: url('/fonts/fonts/Poppins-Light.ttf') format("truetype"); 
+    src: url('/fonts/Poppins-Light.ttf') format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
+}
+html {
+    overflow-x: hidden;
 }
 body {
     margin: 0;
 }
-.wrapper {
-    width: 100vw;
-}
 header {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: rgb(94, 91, 91);
     margin: 0;
     display: flex;
@@ -21,7 +21,7 @@ header {
 .header_photo {
     width: 40%;
     height: 100vh;
-    background-color: rgb(38, 39, 39);
+    background-color: rgb(49, 49, 49);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,8 +35,8 @@ header {
 .header_myname {
     width: 60%;
     height: 100vh;
-    background-color: RGB(45, 46, 46);
-    color: RGB(164, 165, 166);
+    background-color: rgb(51, 52, 52);
+    color: rgb(164, 165, 166);
     font-family: PoppinsLig, sans-serif;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@ header {
     margin: 0;
 }
 .header_myname span {
-    color: RGB(223, 167, 18);
+    color: rgb(223, 167, 18);
 }
 .header_myname nav ul {
     margin: 0;
@@ -65,16 +65,119 @@ header {
 }
 .header_myname nav ul li{
     list-style: none;
-    padding: 20px 5px 0 0;
-    border-top: 1px solid RGB(164, 165, 166);
+    padding: 20px 10px 0 0;
+    border-top: 1px solid rgb(164, 165, 166);
 }
 .header_myname nav ul li p {
     margin: 0;
 }
 .header_mail_link {
-    color: RGB(223, 167, 18);
+    color: rgb(223, 167, 18);
     text-decoration: none;
 }
 .header_mail_link:hover {
     color: #fff;
+}
+.header_mail_link:visited {
+    color: rgb(164, 165, 166);
+}
+
+main{
+    width: 100%;
+    color: rgb(164, 165, 166);
+    font-family: PoppinsLig;
+}
+.about_me {
+    width: 100%;
+    height: auto;
+    background-color: rgb(44, 44, 44);
+    text-align: center;
+
+}
+.about_me > h2 {
+    margin: 0;
+    padding: 1em;
+    color:rgb(223, 167, 18);
+}
+.about_me > p {
+    margin: 0;
+    padding: 2em;
+}
+.skills {
+    width: 100%;
+    height: auto;
+    background-color: rgb(51, 52, 52);
+}
+.skills > h2 {
+    margin: 0;
+    color: rgb(223, 167, 18);
+    padding: 1em;
+    text-align: center;
+}
+.skills  ul {
+    list-style: circle;
+    padding-bottom: 2em;
+}
+.skills_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.code_example {
+    width: 100%;
+    height: auto;
+    background-color: rgb(44, 44, 44);
+}
+.code_example h2 {
+    margin: 0;
+    color: rgb(223, 167, 18);
+    padding: 1em;
+    text-align: center;
+}
+.code_example_wrapper {
+    width: 30%;
+    height: 300px;
+    background-color: rgb(44, 44, 44);
+}
+.code_example pre {
+    margin: 0;
+    width: 30%;
+    padding: 2em 0 2em 0;
+    position: absolute;
+    left: -5%;
+}
+.education {
+    width: 100%;
+    height: auto;
+    background-color: rgb(51, 52, 52);
+}
+.education h2 {
+    margin: 0;
+    color: rgb(223, 167, 18);
+    padding: 1em;
+    text-align: center;
+}
+.education_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 2%;
+}
+.languages {
+    width: 100%;
+    height: auto;
+    background-color: rgb(44, 44, 44);
+}
+.languages h2 {
+    margin: 0;
+    color: rgb(223, 167, 18);
+    padding: 1em;
+    text-align: center;
+}
+.languages ul {
+    list-style: circle;
 }
