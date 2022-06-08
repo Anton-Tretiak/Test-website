@@ -45,7 +45,14 @@ header {
     padding-right: 3%;
 }
 .header_myname_h1h2 {
-    padding-top: 15vh;
+    margin-bottom: 10vh;
+}
+.phone_photo img {
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+    border-radius: 70%;
+    margin-top: 25%;
 }
 .name_surname, .header_specialization, .city {
     margin: 0;
@@ -231,8 +238,6 @@ footer h6 {
     width: 100%;
     height: auto;
     background-color: rgb(44, 44, 44);
-    /* display: none;
-    visibility: hidden; */
 }
 .phone_my_contacts h2 {
     margin: 0;
@@ -279,4 +284,14 @@ footer h6 {
         visibility: hidden;
     }
 
+}
+@media screen and (min-width: 736px) {
+    .phone_my_contacts {
+        display: none;
+        visibility: hidden;
+    }
+    .phone_photo img {
+        display: none;
+        visibility: hidden;
+    }
 }
