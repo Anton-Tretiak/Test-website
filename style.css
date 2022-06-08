@@ -231,8 +231,8 @@ footer h6 {
     width: 100%;
     height: auto;
     background-color: rgb(44, 44, 44);
-    display: none;
-    visibility: hidden;
+    /* display: none;
+    visibility: hidden; */
 }
 .phone_my_contacts h2 {
     margin: 0;
@@ -243,7 +243,7 @@ footer h6 {
 .contacts_main_ul {
     list-style: circle;
     margin: 0;
-    padding-bottom: 4%;
+    padding-bottom: 5%;
 }
 .phone_my_contacts a {
     text-decoration: none;
