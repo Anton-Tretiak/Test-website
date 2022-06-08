@@ -289,6 +289,14 @@ footer h6 {
     }
 
 }
+@media screen and (max-width: 325px) {
+    .skills_first_ul{
+        padding-left: 20px;
+    }
+    .skills_wrapperul{
+        padding-left: 20px;
+    }
+}
 @media screen and (min-width: 736px) {
     .phone_my_contacts {
         display: none;
