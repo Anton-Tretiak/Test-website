@@ -45,7 +45,7 @@ header {
     padding-right: 3%;
 }
 .header_myname_h1h2 {
-    padding-top: 12vh;
+    padding-top: 15vh;
 }
 .name_surname, .header_specialization, .city {
     margin: 0;
@@ -222,4 +222,25 @@ footer h6 {
     margin: 0;
     padding-bottom: 0.2em;
 }
-
+.helper{
+    display: none;
+}
+@media screen and (max-width: 735px) {
+    nav {
+        display: none;
+        visibility: hidden;
+    }
+    .helper{
+        display: block;
+    }
+    .header_myname_h1h2 {
+        padding-top: 0;
+    }
+    .header_photo {
+        display: none;
+        visibility: hidden;
+    }
+    .header_myname {
+        width: 100%;
+    }
+}
