@@ -170,6 +170,7 @@ main{
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding-bottom: 2%;
+    padding-right: 3%;
 }
 .languages {
     width: 100%;
@@ -222,9 +223,39 @@ footer h6 {
     margin: 0;
     padding-bottom: 0.2em;
 }
+
 .helper{
     display: none;
 }
+.phone_my_contacts {
+    width: 100%;
+    height: auto;
+    background-color: rgb(44, 44, 44);
+    display: none;
+    visibility: hidden;
+}
+.phone_my_contacts h2 {
+    margin: 0;
+    color: rgb(223, 167, 18);
+    padding: 1em;
+    text-align: center;
+}
+.contacts_main_ul {
+    list-style: circle;
+    margin: 0;
+    padding-bottom: 4%;
+}
+.phone_my_contacts a {
+    text-decoration: none;
+    color: rgb(164, 165, 166);
+}
+.contacts_under{
+     list-style: none;
+}
+.contacts_under a:hover {
+    color:rgb(223, 167, 18)
+}
+
 @media screen and (max-width: 735px) {
     nav {
         display: none;
@@ -243,4 +274,9 @@ footer h6 {
     .header_myname {
         width: 100%;
     }
+    .code_example {
+        display: none;
+        visibility: hidden;
+    }
+
 }
