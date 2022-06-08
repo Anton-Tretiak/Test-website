@@ -45,7 +45,7 @@ header {
     padding-right: 3%;
 }
 .header_myname_h1h2 {
-    margin-bottom: 10vh;
+    padding-top: 12vh;
 }
 .phone_photo img {
     width: 100%;
@@ -271,10 +271,14 @@ footer h6 {
     }
     .header_myname_h1h2 {
         padding-top: 0;
+        margin-bottom: 15vh;
     }
     .header_photo {
         display: none;
         visibility: hidden;
+    }
+    .phone_photo img {
+        margin-top: 25vh;
     }
     .header_myname {
         width: 100%;
