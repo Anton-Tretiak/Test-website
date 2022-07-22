@@ -1,153 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx" id="html" class="html_over">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anton Tretiak</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Travel Portal</title>
+    <!-- Favicon -->
+    <link type="image/x-icon" href="./assets/favicon.png" rel="shortcut icon">
+    <link type="Image/x-icon" href="./assets/favicon.png" rel="icon">
+    <!-- Fonts -->
 
+    <!-- Rad Had Text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <!-- Aleo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mob_style.css">
 </head>
-<body>
-        <header>
-            <div class="header_photo">
-                <img src="img/main-photo.jpg" alt="My_Photo">
-            </div>
-            <div class="header_myname">
-                <div class="phone_photo"><img src="img/main-photo.jpg" alt=""></div>
-                <div class="header_myname_h1h2">
-                    <h1 class="name_surname"><span>Anton</span> Tretiak</h1>
-                    <h2 class="header_specialization">Trainee Front-end web developer</h2>
-                    <h2 class="city">Kyiv, Ukraine</h2>
-                </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <b>Telegram</b>
-                            <p>@antontrettiak</p>
-                        </li>
-                        <li>
-                            <b>Phone</b>
-                            <p>+380930256342</p>
-                        </li>
-                        <li>
-                            <b>Email</b>
-                            <p><a href="mailto:tretiak.ap@gmail.com" class="header_mail_link">tretiak.ap@gmail.com</a></p>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="helper"></div>
-            </div>
-        </header>
+<body id="body">
 
-        <main>
+  <div class="pop-up hidden">
+    <div class="pop-up__content">
+      <div class="pop-up__content__container">
+        <h2 class="pop-up__header">Log in to your account</h2>
+        <button type="button" name="pop-up__button" class="pop-up__blue_button for_transition hidden_el"><img src="./assets/pop-up/Facebook Logo.svg" alt="Facebook"> Sign In with Facebook</button>
+        <button type="button" name="pop-up__button" class="pop-up__white_button for_transition hidden_el"><img src="./assets/pop-up/Google logo.svg" alt="Facebook"> Sign In with Google</button>
+        <div class="pop-up__lines hidden_el">
+          <hr>
+          <span>or</span>
+          <hr>
+        </div>
+        <div class="pop-up__form">
+          <form name="pop-up_form">
+            <label for="fname">Email</label><br>
+            <input type="text" id="fname" name="fname" class="form__input email__input"><br>
+            <label for="lname">Password</label><br>
+            <input type="text" id="lname" name="lname" class="form__input password__input"><br><br>
+            <button type="submit" class="pop-up__submit-button for_transition">Sign In</button>
+          </form>
+        </div>
+        <a href="#" class="pop-up__forgot_password for_transition hidden_el">Forgot Your Password?</a>
+        <hr class="pop-up__line_end">
+        <p class="pop-up__questsion"><span class="questsion">Don’t have an account? </span><a href="#" class="for_transition pop-up__register_button">Register</a><a href="#" class="pop-up__login_button hidden">Login</a></p>
+      </div>
+    </div>
+  </div>
 
-            <div class="about_me">
-                <h2>About me</h2>
-                <p>Nowadays I'm learning web development particularly with a focus on JavaScript. I have development experience in the past but now i've decided back to programming and web dev. I have developed responsive websites in the past for fun and solved various problems in python I am sure that I will be able to master this profession, as I have such important qualities as: technical mindset, incredible determination, excellent perseverance, craving for new knowledge and self-development. Now I'm studying for two months and a feel that i have really good potential, so I decided to enroll the course from The Rolling Scopes School to speed up my learning.</p>
+  <div class="wrapper">
+    <div class="preview_header_wrapper">
+      <header class="header">
+        <p class="logo_link_p"><a href="#" class="logo_link_a"><img src="./assets/logo.png" alt="Logo"></a></p>
+        <nav>
+          <ul class="navigation_ul">
+            <li><a href="#preview">How It Works</a></li>
+            <li><a href="#steps">Plan Your Trip</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#stories">Travel Stories</a></li>
+          </ul>
+        </nav>
+        <button type="button" name="login_script" id="login__button">Login</button>
+      </header>
+      <section id="preview">
+        <h1>Explore the beauty of<br> the World</h1>
+        <span class="add_info"><i>Receive personalized recommendations for countries, hotels, activities and more</i></span>
+       <div class="preview_search">
+          <span><i>What would you like to do?</i></span>
+          <button type="button" name="start_planning">Start planning</button>
+        </div>
+      </section>
+    </div>
+    <main>
+      <section id="steps">
+        <h2 class="h2_global">3 STEPS TO THE PERFECT TRIP</h2>
+        <div class="steps_container">
+          <div class="steps_container_item">
+            <img src="./assets/steps/Frame28.jpg" alt="tell_us">
+            <p>Tell us what you want to do</p>
+          </div>
+          <div class="steps_container_item">
+            <img src="./assets/steps/Frame11.jpg" alt="share_us">
+            <p>Share us preferable dates </p>
+          </div>
+          <div class="steps_container_item">
+            <img src="./assets/steps/Frame12.jpg" alt="flight">
+            <p>We will give you recommendations</p>
+          </div>
+        </div>
+      </section>  
+      <section id="destinations">
+        <h2 class="h2_global">POPULAR DESTINATIONS</h2>
+        <div class="destinations_wrapper">
+          <div class="destinations_item first_dest"><span>Island</span></div>
+          <div class="destinations_item second_dest"><span>Japan</span></div>
+          <div class="destinations_item third_dest"><span>USA</span></div>
+        </div>
+        <div class="destination_dots_wrapper">
+          <div class="destination_dots">
+            <div class="destination_dots_item first_dot"></div>
+            <div class="destination_dots_item second_dot"></div>
+            <div class=" destination_dots_item third_dot"></div>
+          </div>
+        </div>
+        <div class="button_container">
+          <button type="button" name="find_more"><img src="./assets/Vector.svg" alt="arrow" class="arrow_button"> Find More</button>
+        </div>
+      </section>
+      <h2 class="h2_global h2_stories">TRAVEL STORIES</h2>
+      <div class="stories_footer_wrapper">
+        <section id="stories">
+          <div class="stories_info">
+            <div class="stroies_item">
+              <div class="stroies_item_img"><img src="./assets/stories_img/Rectangle29.jpg" alt="boat"></div>
+              <div class="stroies_item_description">
+                <h3>10 Photos of Attractive Thailand</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...<br><a href="#"><b>Read More</b></a></p> 
+              </div>
             </div>
-            <div class="skills">
-                <h2>My Skills</h2>
-                <div class="skills_wrapper">
-                        <ul class="skills_first_ul">
-                        <li><b>HTML</b></li>
-                        <li><b>CSS</b></li>
-                        <li><b>JavaScript</b></li>
-                        <li><b>C Language</b></li>
-                    </ul>
-                    <ul>
-                        <li><b>Python</b></li>
-                        <li><b>Git</b></li>
-                        <li><b>VSCode</b></li>
-                        <li><b>Adobe Photoshop</b></li>
-                    </ul>
-                </div>
+            <div class="stroies_item">
+              <div class="stroies_item_img"><img src="./assets/stories_img/Rectangle30.jpg" alt="road"></div>
+              <div class="stroies_item_description">
+                <h3>Canyonlands National Park, Utah</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...<br><a href="#"><b>Read More</b></a></p> 
+              </div>
             </div>
-            <div class="code_example">
-                <h2>Code Example</h2>
-                <div class="code_example_wrapper">
-                    <pre><code>
-var searchInsert = function(nums, target) {
-    if (nums.includes(target)) {
-        return nums.indexOf(target);
-    }
-    else {
-        nums.push(target); 
-        nums.sort(function (a,b) {
-            return a - b;                               
-        })
-    return nums.indexOf(target); 
-    }                               
-};
-                    </code></pre>
-                </div>
+            <div class="stroies_item">
+              <div class="stroies_item_img"><img src="./assets/stories_img/Rectangle31.jpg" alt="mounth"></div>
+              <div class="stroies_item_description">
+                <h3>I left my heart in the Mountains!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...<br><a href="#"><b>Read More</b></a></p>            
+              </div>
             </div>
-            <div class="phone_my_contacts">
-                <h2>My Contacts</h2>
-            <div class="skills_wrapper">
-                <ul class="contacts_main_ul">
-                    <li><b>Email:</b>
-                        <ul class="contacts_under">
-                            <li><a href="mailto:tretiak.ap@gmail.com" target="_blank">tretiak.ap@gmail.com</a></li>
-                        </ul>
-                    </li>
-                    <li><b>Telegram:</b>
-                        <ul class="contacts_under">
-                            <li><a href="https://t.me/antontrettiak" target="_blank">@antontrettiak</a></li>
-                        </ul>
-                    </li>
-                    <li><b>LinkedIn:</b>
-                        <ul class="contacts_under">
-                            <li><a href="https://www.linkedin.com/in/anton-tretiak-02b093240" target="_blank">Anton Tretiak</a></li>
-                        </ul>
-                    </li>
-                    <li><b>Phone number:</b>
-                        <ul class="contacts_under">
-                            <li>+380930256342</li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class="stroies_item">
+              <div class="stroies_item_img"><img src="./assets/stories_img/Rectangle32.jpg" alt="car"></div>
+              <div class="stroies_item_description">
+                <h3>The Longest journey in my life!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...<br><a href="#"><b>Read More</b></a></p>
+              </div>
             </div>
-            </div>
-            <div class="education">
-                <h2>Education</h2>
-                <div class="education_wrapper">  
-                    <ul>
-                        <li><b>Lyceum of information technologies</b><i>(2015 - 2020)</i></li>
-                        <li><b>National Aviation University:</b> <i>The Faculty of Computer Engineering (2020-nowadays)</i></li>
-                        <li><b>Courses:</b>
-                            <ul>
-                                <li>FreeCodeCamp HTML & CSS course</li>
-                                <li>HTML Academy free course</li>
-                                <li>CS50 lectures</li>
-                                <li>The Rolling Scopes School <i>(in progress)</i></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>    
-            </div>
-            <div class="languages">
-                <h2>Languages</h2>
-                <div class="education_wrapper">
-                    <ul>
-                        <li>Engilsh B2 <i>(Upper-Intermediate)</i><br>Excellent knowledge of the language, easy to speak and take in information</li>
-                        <li>Ukrainian <i>(Native)</i></li>
-                        <li>Russian <i>(Native)</i></li>
-                    </ul>
-                </div>
-            </div>
-        </main>
-
+          </div>
+          <div class="button_container">
+            <button type="button" name="find_more"><img src="./assets/Vector.svg" alt="arrow" class="arrow_button"> See More</button>
+          </div>
+        </section>
         <footer>
-            <ul>
-                <li><a href="https://github.com/Anton-Tretiak" target="_blank" class='footer_git_link'><img src="./img/icon-github.svg" alt=""></a></li>
-                <li><a href="https://rs.school/js/" target="_blank" class='footer_rss_link'><img src="./img/icon-rsschool.svg" alt=""></a></li>
-                <li><a href="https://www.instagram.com/anton.trettiak/" target="_blank" class='footer_inst_link'><img src="./img/icon-instagram.svg" alt=""></a></li>
-            </ul>
-            <h6>Anton Tretiak 2022</h6>
+          <div class="footer_wrapper">
+              <div class="free_place"></div>
+              <div class="footer_info">
+                <span>All Rights Reserved © Travel Portal</span>
+                <ul>
+                  <li><a href="https://github.com/Anton-Tretiak"><img src="./assets/social_media/inst.svg" alt="instagram" class="def_icon"></a></li>
+                  <li><a href="https://github.com/Anton-Tretiak"><img src="./assets/social_media/youtube.svg" alt="youtube" class="def_icon"></a></li>
+                  <li><a href="https://github.com/Anton-Tretiak"><img src="./assets/social_media/twitter.svg" alt="twitter" class="def_icon"></a></li>
+                  <li><a href="https://github.com/Anton-Tretiak" target="_blank"><img src="./assets/social_media/git.svg" alt="git" class="github"></a></li>
+                  <li><a href="https://rs.school/js/" target="_blank"><img src="./assets/social_media/rsschool.svg" alt="rsschool" class="rsschool"></a></li>
+                </ul>
+              </div>
+          </div>
         </footer>
+      </div>
+    </main>
+  </div>
+
+<!-- Mobile Version -->
+
+  <div class="mob_wrapper">
+
+    <div class="mob_header_preview_wrapper">
+      <div class="menu-area hidden-menu-area"></div>
+      <header class="mob_header">
+        <div class="mob_container mob_header_container">
+          <nav>
+            <a href="#" class="mob_logo"><img src="./assets/mobile_version/mobile_logo.svg" alt="logo"></a>
+            <div class="mob_nav_container">
+              <input class="checkbox" type="checkbox" name="burger" id="chk" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div> 
+              <div class="menu-items">
+                <a href="#mob_preview" class="menu-account">How It Works</a>
+                <a href="#mob_steps" class="menu-account">Plan Your Trip</a>
+                <a href="#mob_destinations" class="menu-account">Destinations</a>
+                <a href="#mob_stories" class="menu-account">Travel Stories</a>
+                <a href="#" class="menu-account">Account</a>
+                <a href="#mob_footer" class="menu-account">Social Media</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section id="mob_preview">
+        <h2 class="valid_h2">Validation of the code</h2>
+          <div class="mob_container"> 
+            <div class="mob_preview_search">
+              <span><i>What would you like to do?</i></span>
+              <button type="button" name="mob_start_planning">Start planning</button>
+            </div>
+          </div>
+      </section>
+    </div>
+
+      <section id="mob_steps">
+        <div class="mob_container">
+          <h2 class="mob_global_h2">3 STEPS TO THE PERFECT TRIP</h2>
+          <div class="mob_steps_icons">
+            <div class="mob_steps_icons_item steps_first_item">
+              <img src="./assets/steps/Frame28.jpg" alt="bicycle">
+              <p class="steps_first_item">Tell us what you<br>want to do</p>
+            </div>
+            <div class="mob_steps_icons_item steps_third_item">
+              <img src="./assets/steps/Frame11.jpg" alt="calendar">
+              <p class="steps_third_item">Share us preferable dates</p>
+            </div>
+            <div class="mob_steps_icons_item steps_second_item">
+              <img src="./assets/steps/Frame12.jpg" alt="plane">
+              <p class="steps_second_item" >We will give you<br>recommendations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="mob_destinations">
+        <div class="mob_container">
+          <h2 class="mob_global_h2 mob_dest_h2">POPULAR DESTINATIONS</h2>
+          <div class="mob_slider">
+            <span class="mob_slider_header">SPAIN</span>
+            <div class="arrow_container">
+              <div class="arrow_left"><img src="./assets/destinations/mob_arrow.svg" alt="arrow_left"></div>
+              <div class="arrow_right"><img src="./assets/destinations/mob_arrow.svg" alt="arrow_right"></div>
+            </div>
+            <div class="mob_dots_container">
+              <div class="mob_destination_dots">
+                <div class="mob_destination_dots_item first_dot"></div>
+                <div class="mob_destination_dots_item second_dot"></div>
+                <div class="mob_destination_dots_item third_dot"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mob_button_container">
+            <button type="button" name="mob_find_more"><img src="./assets/Vector.svg" alt="arrow" class="mob_arrow_button"> Find More</button>
+          </div>
+        </div>
+      </section>
+      <h2 class="mob_global_h2 mob_stories_h2">TRAVEL STORIES</h2>
+      <div class="mob_stories_footer_wrapper">
+          <section id="mob_stories">
+            <div class="mob_container">
+              <div class="mob_stories_item">
+                <div class="mob_stroies_item_img"><img src="./assets/stories_img/Rectangle29.jpg" alt="boat"></div>
+                <div class="mob_stroies_item_description">
+                  <h3>10 Photos of Attractive Thailand</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...<br><a href="#"><b>Read More</b></a></p> 
+                </div>
+              </div>
+              <div class="mob_stories_item">
+                <div class="mob_stroies_item_img"><img src="./assets/stories_img/Rectangle30.jpg" alt="boat"></div>
+                <div class="mob_stroies_item_description">
+                  <h3>Canyonlands National Park, Utah</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...<br><a href="#"><b>Read More</b></a></p> 
+                </div>
+              </div>
+              <div class="mob_stories_item">
+                <div class="mob_stroies_item_img"><img src="./assets/stories_img/Rectangle31.jpg" alt="boat"></div>
+                <div class="mob_stroies_item_description">
+                  <h3>I left my heart in the Mountains!</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...<br><a href="#"><b>Read More</b></a></p> 
+                </div>
+              </div>
+              <div class="mob_stories_item mob_last_item">
+                <div class="mob_stroies_item_img"><img src="./assets/stories_img/Rectangle32.jpg" alt="boat"></div>
+                <div class="mob_stroies_item_description">
+                  <h3>The Longest journey in my life! </h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...<br><a href="#"><b>Read More</b></a></p> 
+                </div>
+              </div>
+              <div class="mob_button_container">
+                <button type="button" name="mob_find_more"><img src="./assets/Vector.svg" alt="arrow" class="mob_arrow_button"> See More</button>
+              </div>
+            </div>
+          </section>
+          <footer id="mob_footer">
+            <ul>
+              <li><a href="#"><img src="./assets/social_media/inst.svg" alt="inst"></a></li>
+              <li><a href="#"><img src="./assets/social_media/youtube.svg" alt="youtube"></a></li>
+              <li><a href="#"><img src="./assets/social_media/twitter.svg" alt="twitter"></a></li>
+            </ul>
+          </footer>
+      </div>
+  </div>
+
+<script src="./JS/burger-menu.js"></script>
+<script src="./JS/login_pop-up.js"></script>
 </body>
 </html>
