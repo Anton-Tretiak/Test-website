@@ -26,6 +26,7 @@ body {
   height: 100%;
   background-color: rgba(20, 20, 20, 0.3);
   position: absolute;
+  z-index: 1000;
   padding-bottom: 50%;
 }
 .pop-up__content {
@@ -247,6 +248,9 @@ button[name="pop-up__button"] img {
   .pop-up__line_end {
     margin-bottom: 10px;
   }
+  .pop-up__questsion {
+    font-size: 8px;
+  }
 }
 @media screen and (max-width: 550px) {
   .pop-up__content {
@@ -261,9 +265,6 @@ button[name="pop-up__button"] img {
   }
   button[name="pop-up__button"] {
     font-size: 10px;
-  }
-  .pop-up__questsion {
-    font-size: 8px;
   }
   .pop-up__lines span {
     font-size: 10px;
@@ -446,6 +447,9 @@ button[name="start_planning"]:hover {
 .steps_container_item img {
   width: 6.5vw;
   height: 6.5vw;
+  min-height: 35px;
+  min-height: 35px;
+  min-width: 35px;
 }
 .steps_container_item p {
   width: 100%;
@@ -486,14 +490,23 @@ section#destinations .destinations_wrapper {
 .first_dest {
   background-image: url(./assets/destinations/Rectangle23.jpg);
   background-size: cover;
+  transition: .5s;
 }
 .second_dest {
   background-image: url(./assets/destinations/Rectangle24.jpg);
   background-size: cover;
+  transition: .5s;
 }
 .third_dest {
   background-image: url(./assets/destinations/Rectangle25.jpg);
   background-size: cover;
+  transition: .5s;
+}
+.translate_right {
+  transform: translateX(58vw);
+}
+.translate_left {
+  transform: translateX(-58vw);
 }
 
 .destination_dots_wrapper {
@@ -517,6 +530,15 @@ section#destinations .destinations_wrapper {
 .destination_dots_item:hover {
   background-color: rgba(242, 120, 92, 1);
   cursor: pointer;
+}
+.second_dot{
+  background-color: rgba(242, 120, 92, 1);
+}
+.active_dot {
+  background-color: rgba(242, 120, 92, 1);
+}
+.not_active_dot {
+  background-color: rgba(242, 120, 92, 0.5);
 }
 
 .button_container {
@@ -706,6 +728,9 @@ footer span {
   }
   .stroies_item_img img {
     border-radius: 10px;
+  }
+  .steps_container_item p {
+    font-size: 7px;
   }
 }
 @media screen and (max-width: 575px) {
